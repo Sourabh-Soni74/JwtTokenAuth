@@ -1,0 +1,22 @@
+server:
+  port: 8084
+
+
+spring:
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+  datasource:
+    url: jdbc:postgresql://localhost:5432/microservices2
+    username: postgres
+    password: Root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+  application:
+    name: LIBRARY-MANAGEMENT
