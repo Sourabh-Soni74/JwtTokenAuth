@@ -45,7 +45,7 @@ public class AuthController {
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
-    //do auth added
+    //doAuthenticate will do the authentication
     private void doAuthenticate(String email, String password) {
 
         UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(email, password);
